@@ -207,6 +207,11 @@ class _DetailScreenState extends State<DetailScreen> {
                       _buildInfoRow('Rating', product.rating.toString()),
                       const Divider(color: AppColors.gray, height: 1),
                       _buildInfoRow('Stok', product.stock.toString()),
+                      const Divider(color: AppColors.gray, height: 1),
+                      _buildInfoRow(
+                        'Diskon',
+                        '${product.discountPercentage.toStringAsFixed(2)}%',
+                      ),
                       const SizedBox(height: 28),
                       SizedBox(
                         width: double.infinity,
